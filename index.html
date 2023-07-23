@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <title>论坛下线公告</title>
+    <meta name="keywords" content="Vincent">
+
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css" media="screen" type="text/css">
+	
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?04e9bf42ea1d528f01e29bde7cbd7d1e";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+	
+	<meta name="yandex-verification" content="fef4d3a8537e0090" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="container">
+                <div class="intro">
+                    <div class="user-warp img">
+                       <!-- <img src="./img/new.jpg" alt="Vincent"> -->
+                    </div>
+                    <div class="nickname">论坛下线公告</div>
+                    <div class="description">
+                        <p>"由于论坛人数不多,且站长为学生党经费有限故只能暂且关闭了..."</p>
+                    </div>
+                    <div class="zuobiao">
+                        <span>十分抱歉！还请谅解！以下为站长的其他站点，还请支持！</span>
+                        </span>
+                    </div>
+                    <div class="menu navbar-right links">
+                        <a class="menu-item" href="/">首页</a> ·
+                        <a href="https://blog.alone-hk.cn">博客</a>·
+                        <a href="https://shop.alone-hk.cn">商店</a>·
+                        <a href="https://front.alone-hk.cn">导航</a>·
+						<a href="https://drive.alone-hk.cn">资源</a>·
+						<a href="https://vincent-google.eu.org/">谷歌</a>·
+						<a href="https://audio-game.alone-hk.cn/">音游</a>·
+						<a href="https://short.alone-hk.cn">短网址</a>·
+						<a href="https://team.alone-hk.cn">团队</a>·
+						<a href="https://home-page.alone-hk.cn">搜索</a>
+                        <center>
+                            <div id="header"></div>
+                            <div id="main">
+                                <div class="demo">
+                                    <div id="player3" class="aplayer">
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                    <div style=" line-height: 20px;font-size: 9pt;">
+                        <p></p>
+                        <p style="margin-left: 8rem;font-size: 8pt;"><small></small></p>
+                    </div>
+                    <br>
+                    <center>
+                        <ul id="donateBox" class="list pos-f tr3">
+                        </ul>
+                        <div id="QRBox" class="pos-f left-100">
+                            <div id="MainBox"></div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <footer id="footer" class="footer">
+            <div class="stars">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/clipboard.min.js"></script>
+<script src="./js/APlayer.js"></script>
+<script>
+$(function(){
+
+
+
+    let ap3 = new APlayer({
+        element: document.getElementById('player3'),//样式1
+        narrow: false,
+        autoplay: false,
+        showlrc: true,
+        preload: 'auto',
+        music: {
+            title: ' Wish',
+            author: 'JW',
+            url: '/bgm.mp3',
+            pic: './img/tm.png'
+        }
+    });
+    ap3.init();
+    
+    let _Blog = window._Blog || {};
+    const currentTheme = window.localStorage && window.localStorage.getItem('theme');
+    const isDark = currentTheme === 'dark';
+    if (isDark) {
+        document.getElementById("switch_default").checked = true;
+    } else {
+        document.getElementById("switch_default").checked = false;
+    }
+    _Blog.toggleTheme = function () {
+        if (isDark) {
+            document.getElementsByTagName('body')[0].classList.add('dark-theme');
+        } else {
+            document.getElementsByTagName('body')[0].classList.remove('dark-theme');
+        }
+        document.getElementsByClassName('toggleBtn')[0].addEventListener('click', () => {
+            if (document.getElementsByTagName('body')[0].classList.contains('dark-theme')) {
+                document.getElementsByTagName('body')[0].classList.remove('dark-theme');
+            } else {
+                document.getElementsByTagName('body')[0].classList.add('dark-theme');
+            }
+            window.localStorage && window.localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light',)
+        })
+    };
+    _Blog.toggleTheme();
+})
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TK73WYLG3W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TK73WYLG3W');
+</script>
+
+</html>
