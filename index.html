@@ -7,17 +7,7 @@
     <meta name="keywords" content="Vincent">
 
     <link rel="shortcut icon" href="./img/favicon.ico">
-    <link rel="stylesheet" href="./css/style.css" media="screen" type="text/css">
-	
-	<script>
-	var _hmt = _hmt || [];
-	(function() {
-	var hm = document.createElement("script");
-	hm.src = "https://hm.baidu.com/hm.js?04e9bf42ea1d528f01e29bde7cbd7d1e";
-	var s = document.getElementsByTagName("script")[0]; 
-	s.parentNode.insertBefore(hm, s);
-	})();
-	</script>
+    <link rel="stylesheet" href="./css/style.css" media="screen" type="text/css">	
 	
 	<meta name="yandex-verification" content="fef4d3a8537e0090" />
 
@@ -134,64 +124,17 @@
 
 
 </body>
-<script src="./js/jquery.min.js"></script>
-<script src="./js/clipboard.min.js"></script>
-<script src="./js/APlayer.js"></script>
-<script>
-$(function(){
 
 
-
-    let ap3 = new APlayer({
-        element: document.getElementById('player3'),//样式1
-        narrow: false,
-        autoplay: false,
-        showlrc: true,
-        preload: 'auto',
-        music: {
-            title: ' Wish',
-            author: 'JW',
-            url: '/bgm.mp3',
-            pic: './img/tm.png'
-        }
-    });
-    ap3.init();
-    
-    let _Blog = window._Blog || {};
-    const currentTheme = window.localStorage && window.localStorage.getItem('theme');
-    const isDark = currentTheme === 'dark';
-    if (isDark) {
-        document.getElementById("switch_default").checked = true;
-    } else {
-        document.getElementById("switch_default").checked = false;
-    }
-    _Blog.toggleTheme = function () {
-        if (isDark) {
-            document.getElementsByTagName('body')[0].classList.add('dark-theme');
-        } else {
-            document.getElementsByTagName('body')[0].classList.remove('dark-theme');
-        }
-        document.getElementsByClassName('toggleBtn')[0].addEventListener('click', () => {
-            if (document.getElementsByTagName('body')[0].classList.contains('dark-theme')) {
-                document.getElementsByTagName('body')[0].classList.remove('dark-theme');
-            } else {
-                document.getElementsByTagName('body')[0].classList.add('dark-theme');
-            }
-            window.localStorage && window.localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light',)
-        })
-    };
-    _Blog.toggleTheme();
-})
-</script>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TK73WYLG3W"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T2KSMCTHJC"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-TK73WYLG3W');
+  gtag('config', 'G-T2KSMCTHJC');
 </script>
 
 <script>
